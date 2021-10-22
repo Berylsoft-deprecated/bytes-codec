@@ -1,0 +1,19 @@
+[package]
+name = "bytes-codec"
+version = "0.1.0"
+edition = "2018"
+authors = ["stackinspector"]
+license = "Apache-2.0"
+repository = "https://github.com/Berylsoft/bytes-codec"
+description = "A simple wrapper of `binrw` to support encoding and decoding of small-sized bytes of big-endian binary data."
+readme = "README.md"
+
+[lib]
+name = "bytes_codec"
+path = "lib.rs"
+
+[dependencies]
+binrw = "0.8"
+
+[dev-dependencies]
+hex-literal = "0.3"
